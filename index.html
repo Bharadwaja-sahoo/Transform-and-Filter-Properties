@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gallery.css">
+    <script src="./gallery.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="containerImage">
+            <img src="../../ASSETS/PHOTO/parrot.jpg" id="img">
+        </div>
+        <div id="containerFilter">
+            <p>Filter Edits</p>
+            <label>Blur</label>
+            <input type="range" min="0" max="100" value="0" id="blur" oninput="filterFun()">
+            <label>Brightness</label>
+            <input type="range" min="0" max="1000" value="100" id="bright" oninput="filterFun()">
+            <label>Contrast</label>
+            <input type="range" min="0" max="1000" value="100" id="cont" oninput="filterFun()">
+            <label>Hue-rotate</label>
+            <input type="range" min="0" max="360" value="0" id="hue" oninput="filterFun()">
+            <label>Grayscale</label>
+            <input type="range" min="0" max="100" value="0" id="gray" oninput="filterFun()">
+            <label>Saturate</label>
+            <input type="range" l̥ōmin="0" max="1000" value="100" id="satu" oninput="filterFun()">
+            <label>Opacity</label>
+            <input type="range" min="0" max="100" value="100" id="opa" oninput="filterFun()">
+            <label>Invert</label>
+            <input type="range" min="0" max="100" value="0" id="inv" oninput="filterFun()">
+            <label>Sepia</label>
+            <input type="range" min="0" max="100" value="0" id="sep" oninput="filterFun()">
+        </div>
+        <div id="containerTrans">
+            <p>Transform</p>
+            <label>Rotate X</label>
+            <input type="range" id="rotatex" min="0" max="360" value="0" oninput="transFun()">
+            <label>Rotate Y</label>
+            <input type="range" id="rotatey" min="0" max="360" value="0" oninput="transFun()">
+            <label>Rotate Z</label>
+            <input type="range" id="rotatez" min="0" max="360" value="0" oninput="transFun()">
+            <label>Scale X</label>
+            <input type="range" id="scax" min="0.1" max="5" value="1" oninput="transFun()">
+            <label>Scale Y</label>
+            <input type="range" id="scay" min="0.1" max="5" value="1" oninput="transFun()">
+            <label>Skew X</label>
+            <input type="range" id="skewx" min="0" max="180" value="0" oninput="transFun()">
+            <label>Skew Y</label>
+            <input type="range" id="skewy" min="0" max="180" value="0" oninput="transFun()">
+            <label>Translate X</label>
+            <input type="range" id="transx" min="-100" max="100" value="0" oninput="transFun()">
+            <label>Translate Y</label>
+            <input type="range" id="transy" min="-100" max="100" value="0" oninput="transFun()">
+        </div>
+    </div>
+</body>
+</html>
